@@ -1,6 +1,6 @@
 # Krsiak Daniel
 
-React Developer = [krsiak.cz](https://krsiak.cz/) + [RESUME in PDF](https://krsiak.cz/daniel_krsiak_resume.pdf)
+React Developer = [krsiak.cz](https://krsiak.cz/) + [RESUME in PDF](https://github.com/krsiakdaniel/krsiak/blob/master/daniel_krsiak_resume.pdf)
 
 ## Technology
 
