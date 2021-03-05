@@ -1,0 +1,246 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gray-light: #434343;
+  --gray-dark: #2c3e50;
+  --purple: #333399;
+  --pink: #ff00cc;
+  --yellow: #f5af19;
+  --red: #f12711;
+  --green-light: #38ef7d;
+  --green-dark: #11998e;
+  --blue-light: #56ccf2;
+  --blue-dark: #2f80ed;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  background: var(--gray-dark);
+  text-shadow: 2px 3px 0 rgba(0,0,0,0.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  background: var(--black);
+  background: -webkit-linear-gradient(to right, var(--gray-light), var(--black));
+  background: linear-gradient(to right, var(--gray-light), var(--black));
+}
+
+header, a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8px;
+  text-align: center;
+  color: var(--white);
+  border: 4px solid var(--white);
+  border-radius: 4px;
+  margin: 4px;
+}
+
+header {
+  flex: 1;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 0.5em;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 1em;
+  margin: 0 0 8px 0;
+}
+
+code {
+  font-size: 11px;
+}
+
+img {
+  display: none;
+}
+
+section {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+}
+
+a {
+  flex: 1;
+  transition: box-shadow 1s;
+  margin-top: 0;
+}
+
+a,
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 0;
+  text-decoration: underline;
+}
+
+p {
+  display: none;
+}
+
+.project {
+  background: var(--pink);
+  background: -webkit-linear-gradient(to right, var(--purple), var(--pink));
+  background: linear-gradient(to right, var(--purple), var(--pink));
+}
+
+.project:hover,
+.project:focus {
+  background: -webkit-linear-gradient(to top, var(--purple), var(--pink));
+  background: linear-gradient(to top, var(--purple), var(--pink));
+}
+
+.github {
+  background: -webkit-linear-gradient(to right, var(--yellow), var(--red));
+  background: linear-gradient(to right, var(--yellow), var(--red));
+}
+
+.github:hover,
+.github:focus {
+  background: -webkit-linear-gradient(to top, var(--yellow), var(--red));
+  background: linear-gradient(to top, var(--yellow), var(--red));
+}
+
+.resume {
+  background: var(--green-light);
+  background: -webkit-linear-gradient(to right, var(--green-dark), var(--green-light));
+  background: linear-gradient(to right, var(--green-dark), var(--green-light));
+}
+
+.resume:hover,
+.resume:focus {
+  background: -webkit-linear-gradient(to top, var(--green-dark), var(--green-light));
+  background: linear-gradient(to top, var(--green-dark), var(--green-light));
+}
+
+.linkedin {
+  background: var(--blue-light);
+  background: -webkit-linear-gradient(to right, var(--blue-light), var(--blue-dark));
+  background: linear-gradient(to right, var(--blue-light), var(--blue-dark));
+}
+
+.linkedin:hover,
+.linkedin:focus {
+  background: -webkit-linear-gradient(to top, var(--blue-light), var(--blue-dark));
+  background: linear-gradient(to top, var(--blue-light), var(--blue-dark));
+}
+
+/* === MEDIA QUERIES ==== */
+/* Nokia 8110 4G (240x320) */
+@media (min-height: 321px) {
+  header, a {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 0.75em;
+    margin: 0 0 16px 0;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  code {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 32px;
+    margin: 0 0 8px 0;
+  }
+}
+
+/* iPhone 5/SE (320x568) */
+@media (min-height: 569px) {
+  header, a {
+    padding: 24px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    display: block;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  img {
+    display: block;
+    margin: 16px 0 0 0;
+    width: 128px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  section {
+    flex-direction: row;
+  }
+
+  a {
+    margin-right: 0;
+  }
+
+  a:last-of-type {
+    margin-right: 4px;
+  }
+}
