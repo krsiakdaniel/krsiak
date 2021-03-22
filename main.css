@@ -139,7 +139,7 @@ h3 small {
 
 h4 {
   color: var(--blue-300);
-  margin: var(--space-4) 0 0 0;
+  margin: var(--space-4) 0 var(--space-1) 0;
 }
 
 p {
@@ -163,6 +163,11 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
+}
+
+ul {
+  margin: var(--space-3) 0 0 var(--space-2);
+  padding-left: var(--space-3);
 }
 
 li { line-height: 20px; }
