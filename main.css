@@ -88,6 +88,10 @@ nav a:visited {
   color: var(--white);
 }
 
+nav a span {
+  display: none;
+}
+
 .wrapper {
   margin: 0 var(--space-4);
 }
@@ -98,6 +102,7 @@ nav a:visited {
   padding: var(--space-4);
   margin-bottom: var(--space-4);
   border-radius: var(--radius-1);
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -213,6 +218,10 @@ img {
   }
   nav a:last-of-type {
     margin-right: 0;
+  }
+
+  nav a span {
+    display: block;
   }
 }
 

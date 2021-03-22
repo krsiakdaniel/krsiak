@@ -15,10 +15,10 @@
   <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link rel="preload" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css?v=0.2.0">
+  <link rel="stylesheet" href="main.css?v=0.2.1">
   <link rel="manifest" href="manifest.json">
   <script src="index.js" defer></script>
 </head>
@@ -26,7 +26,7 @@
   <div class="wrapper">
     <nav>
       <a href="https://github.com/krsiakdaniel/krsiak/blob/master/daniel_krsiak_resume.pdf" target="_blank" rel="noreferrer" class="resume">resume.pdf</a>
-      <a href="https://movies.krsiak.cz/" target="_blank" rel="noreferrer" class="project">Project: Movies</a>
+      <a href="https://movies.krsiak.cz/" target="_blank" rel="noreferrer" class="project">Project<span>: Movies</span></a>
       <a href="https://www.linkedin.com/in/krsiakdaniel/" target="_blank" rel="noreferrer" class="linkedin">LinkedIn</a>
     </nav>
 
@@ -136,20 +136,10 @@
       <section>
         <h4>Bio</h4>
         <p>Born 1985 in Czechoslovakia.</p>
-        <p><img src="krsiak-daniel.jpg" alt="Krsiak Daniel - React Developer"></p>
+        <img src="krsiak-daniel.jpg" width="256" height="276" alt="Krsiak Daniel - React Developer" loading="lazy">
       </section>
     </div>
   </div>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-19708746-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-19708746-1');
-  </script>
 
   <!-- Smartlook -->
   <script>
