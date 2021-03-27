@@ -52,11 +52,22 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -129,7 +140,8 @@ h2 {
 }
 
 h2 small {
-  font-size: var(--font-size-3)
+  font-size: var(--font-size-3);
+  display: block;
 }
 
 h3 {
@@ -142,9 +154,14 @@ h3 small {
   font-weight: var(--font-weight-1);
 }
 
+h3 small span:before {
+  content: "\00B7";
+  margin: 0 4px 0 2px;
+}
+
 h4 {
   color: var(--blue-300);
-  margin: var(--space-4) 0 var(--space-1) 0;
+  margin: var(--space-2) 0 var(--space-1) 0;
 }
 
 p {
@@ -167,11 +184,13 @@ a:focus {
 }
 
 ul {
-  margin: var(--space-3) 0 0 var(--space-2);
-  padding-left: var(--space-3);
+  margin-left: var(--space-2);
+  padding: var(--space-2);
 }
 
-li { line-height: 20px; }
+li {
+  line-height: 20px;
+}
 
 img {
   border: var(--border-1);
@@ -215,10 +234,20 @@ img {
   background: linear-gradient(to bottom, var(--blue-200), var(--blue-100));
 }
 
+/* MISC */
 .no-margin {
   margin: 0;
 }
 
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+/* MEDIA */
 @media (min-width: 1000px) {
   .wrapper {
     width: 800px;
@@ -239,9 +268,44 @@ img {
   nav a:last-of-type {
     margin-right: 0;
   }
-
   nav a span {
     display: block;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
+
+@media (min-width: 650px) {
+  h2 small {
+    display: inline-block;
+  }
+
+  ul {
+    margin-left: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+  }
+  .links-list {
+    margin: 0 0 var(--space-2) 0;
+    padding: 0;
+  }
+  .links-list li {
+    display: inline-block;
+  }
+  .links-list li:after {
+    content: ' /';
+  }
+  .links-list li:last-of-type:after {
+    content: '';
+  }
+  .mobile {
+    display: inline-block;
+  }
+
+  .mobile:before {
+    content: "\002F";
+    margin-right: 4px;
   }
 }
 
