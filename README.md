@@ -15,5 +15,3 @@ Site is made as [PWA](https://web.dev/progressive-web-apps/) :)
 ## Site performance score
 
 See details: [Lighthouse report](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fkrsiak.cz%2F)
-
-![score](score.png)
