@@ -247,7 +247,7 @@ img {
   margin-left: 6px;
 }
 
-.desktop {
+.hide-on-mobile {
   display: none;
 }
 
@@ -310,6 +310,9 @@ img {
   .mobile span:before {
     content: '\00B7';
     margin-right: 6px;
+  }
+  .hide-on-mobile {
+    display: block;
   }
 }
 
