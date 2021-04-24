@@ -205,10 +205,8 @@ img {
 
   .container {
     padding: var(--space-8);
-    margin-bottom: var(--space-4); }
+    margin-bottom: var(--space-4); } }
 
-  .desktop {
-    display: block; } }
 @media (min-width: 650px) {
   nav {
     flex-direction: row; }
