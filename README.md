@@ -19,3 +19,7 @@ See details: [Lighthouse report](https://lighthouse-dot-webdotdevsite.appspot.co
 ## SCSS
 
 [Install](https://sass-lang.com/install) and run: `sass main.scss main.css`
+
+## Netlify
+
+Check site build locally before commit: `yarn netlify-build`

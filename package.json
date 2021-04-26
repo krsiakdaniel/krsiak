@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@netlify/build": "^11.2.6",
+    "add": "^2.0.6",
+    "netlify-plugin-a11y": "^0.0.12",
+    "netlify-plugin-checklinks": "^4.1.1",
+    "yarn": "^1.22.10"
+  }
+}
